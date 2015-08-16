@@ -6,6 +6,12 @@ body{
 	background-color: #F0F0F0;
 }
 
+.main-container{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
 .header-bg-logo{
     background-image: url(../images/SplitShire_IMG_0771.jpg);
     background-size: cover;
@@ -18,6 +24,7 @@ body{
     position: fixed;
     top: 4%;
     left: 0;
+    float: left;
 }
 
 @media screen and (max-width: 1280px) { /* Specific to this particular image */
@@ -27,11 +34,34 @@ body{
         }
 }
 
-/*fsdfs*/
 .top-menu {
     width: 100%;
-    height: 100%;
-    min-height: 50px;
+    height: 4%;
+    min-height: 30px;
     background-color: aquamarine;
-    position:absolute;
+    position:fixed;
+    z-index: 100;
+}
+
+.nav-menu {
+    width: 100%;
+}
+
+.nav-menu a{
+    width: 33%;
+    padding-left: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-bg-logo-bot {
+    background-color: black;
+    height: 500px;
+    width: 1000px;
+    float: left;
+    top: 1500px;
+    z-index: 999;
+    clear: both;
 }
